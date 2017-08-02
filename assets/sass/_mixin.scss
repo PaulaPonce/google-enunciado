@@ -1,0 +1,10 @@
+@mixin spanStyles(){
+	@if $font1 == monospace{
+		@extend .grey-text, .text-darken-1;
+	}
+}
+
+@mixin sectionPadding(){
+	padding-top: 30px;
+	padding-bottom: 30px;
+}

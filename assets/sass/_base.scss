@@ -1,0 +1,111 @@
+body{
+	padding: 0;
+	margin: 0;
+	@extend .grey-text, .text-darken-4;
+}
+
+.container{
+	width: $width;
+}
+
+h1{
+	font-size: $h1_size;
+}
+h2{
+	font-size: $h2_size;
+}
+h3{
+	font-size: $h3_size;
+}
+h4{
+	font-size: $h4_size;
+}
+h5{
+	font-size: $h5_size;
+	@extend .light-blue-text, .text-darken-2;
+}
+h6{
+	font-size: $h6_size;
+	@extend .grey-text, .text-darken-3;
+}
+p{
+	font-size: $p_size;
+}
+span{
+	font-family: $font1;
+	@include spanStyles();
+}
+
+.divider{
+	width: $width;
+	@extend .light-blue, .darken-2;
+}
+
+/* Navbar */
+nav{
+	height: 240px;
+	box-shadow: none;
+	@extend .white;
+	.nav-wrapper{
+		.row:first-child{
+			height: 40px;
+		}
+		.row:nth-child(2){
+			height: 70px;
+		}
+		.row:last-child{
+			height: 45px;
+		}
+	}
+	&.nav-center ul{
+		text-align: center;
+		li{
+			display: inline;
+			float: none;
+			a{
+				display: inline-block;
+				font-weight: bold;
+				text-transform: uppercase;
+				@extend .grey-text, .text-darken-1;
+			}
+		}
+	}
+}
+
+
+section{
+	@include sectionPadding();
+}
+
+.newsletter{
+	padding: 10px;
+	@extend .grey, .lighten-3;
+	p{
+		margin: 0;
+	}
+}
+
+#third-section{
+	.row{
+		.col{
+			padding: 1rem 0.75rem;
+		}
+	}
+}
+
+.page-footer{
+	@extend .grey-text, .text-darken-4;
+	@extend .white;
+	h5{
+		@extend .grey-text, .text-darken-1;
+	}
+	a{
+		@extend .grey-text;
+	}
+	.footer-copyright {
+		@extend .white;
+		a{
+			@extend .grey-text;
+		}
+	}
+}
